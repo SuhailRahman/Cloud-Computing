@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  web:
+    build: ./
+    container_name: users
+    image: users:latest
+    command: python user.py
+    restart: always
+    ports:
+      - "80:80"
+    environment:
+      - TEAM_NAME=CC_1271_1403_1420_1814
+    links:
+      - sqlite3
+    depends_on:
+      - sqlite3
+  sqlite3:
+    image: nouchka/sqlite3:latest

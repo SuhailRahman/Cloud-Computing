@@ -1,0 +1,11 @@
+flask
+flask-marshmallow
+marshmallow-sqlalchemy
+SQLAlchemy
+datetime
+requests
+Flask-SQLAlchemy
+ipython
+pika
+kazoo
+docker
