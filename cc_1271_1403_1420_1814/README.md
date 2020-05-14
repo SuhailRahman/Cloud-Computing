@@ -8,3 +8,5 @@ Orchestrator:
 The "orch_trial" folder contains database.py(the source code for orchestrator) , Dockerfile, docker-compose file, requirements.txt, a bash file, and slave folder. The slave folder contains main_worker.py (source code for the worker program i.e. Master and Slave program ) and count1.json (to keep track of the number of slaves).  Before you start running the program, reset the counters in the "slave/count1.json" to 1. The command to run the micro-service is ./run.sh
 
 
+Assignment Folder has all the 3 assignments.
+
