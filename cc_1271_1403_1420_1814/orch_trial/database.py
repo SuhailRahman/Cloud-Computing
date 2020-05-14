@@ -88,7 +88,7 @@ time.sleep(1)
 container2=client.containers.run('orchtrial_slave', name="slave" ,command='sh -c "python3 -u slave/main_worker.py slave"', environment=["TEAM_NAME=cc_1271_1403_1420_1814"],network="orchtrial_default", volumes={'/home/ubuntu/orch_trial/': {'bind': '/code', 'mode': 'rw'},'/usr/bin/docker':{'bind':'/usr/bin/docker'},'/var/run/docker.sock':{'bind':'/var/run/docker.sock'}},detach=True)
 #-------------------------------------------------------------------------------------------------------------------------
 
-st=""
+
 #Getting the PID of a container
 proc = subprocess.Popen(["docker inspect -f '{{.State.Pid}}' "+container1.id], stdout=subprocess.PIPE, shell=True)
 (out, err) = proc.communicate()
