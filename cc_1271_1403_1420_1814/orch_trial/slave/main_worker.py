@@ -73,7 +73,6 @@ if(sys.argv[1]=="master"):
 		timestamp= db.Column(db.String(50))
 		source= db.Column(db.String(50))
 		destination= db.Column(db.String(50))
-		#users=db.relationship('Shared_user', backref="Ride", cascade="all, delete-orphan" , lazy='dynamic')
 		users=db.relationship('Shared_user',cascade="all, delete-orphan" , lazy='dynamic')
 
 
