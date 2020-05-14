@@ -1,0 +1,8 @@
+flask
+flask-marshmallow
+marshmallow-sqlalchemy
+SQLAlchemy
+datetime
+requests
+pandas
+Flask-SQLAlchemy

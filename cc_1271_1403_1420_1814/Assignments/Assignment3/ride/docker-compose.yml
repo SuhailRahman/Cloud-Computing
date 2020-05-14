@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  web:
+    build: ./
+    container_name: rides
+    image: rides:latest
+    command: python ride.py
+    restart: always
+    ports:
+      - "80:80"
+    environment:
+      - TEAM_NAME=CC_0788_0794_0847
+    links:
+      - sqlite3
+    depends_on:
+      - sqlite3
+  sqlite3:
+    image: nouchka/sqlite3:latest
