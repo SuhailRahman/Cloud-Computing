@@ -468,8 +468,8 @@ def crash_master():
 		container_name=client.containers.get(str(cid))
 		print("slave is going to get deleted ",container_name)
 		container_name.kill()
-		container_name.remove()
-		zk.delete("/orchestrator/"+ str(top_pid).strip())
+		#container_name.remove()
+		#zk.delete("/orchestrator/"+ str(top_pid).strip())
 		l=[]
 		l.append(top_pid)
 		return jsonify(l),200
