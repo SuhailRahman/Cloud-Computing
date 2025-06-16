@@ -16,6 +16,7 @@ Manages all user-related operations like user creation and listing.
 ```bash
 cd user/
 ./run.sh
+````
 Pre-requisite:
 Before using any APIs, reset the HTTP request count: DELETE /api/v1/_count
 
@@ -34,8 +35,9 @@ Handles ride creation, joining, and retrieval operations.
 
 **To Run**:
 ```bash
-cd user/
+cd rides/
 ./run.sh
+```
 Pre-requisite:
 Before using any APIs, reset the HTTP request count: DELETE /api/v1/_count
 
@@ -55,3 +57,4 @@ The **Orchestrator** coordinates the user and ride microservices, manages master
 ```bash
 cd orchestrator/
 ./run.sh
+```
