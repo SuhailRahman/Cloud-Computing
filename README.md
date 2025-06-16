@@ -37,7 +37,7 @@ Each microservice is containerized using **Docker** and orchestrated using **Doc
 
 To run each microservice:
 
-1. Navigate to the service directory (e.g. `user/`, `rides/`, or `orch_trial/`)
+1. Navigate to the service directory (e.g. `user/`, `rides/`, or `orchestrator/`)
 2. Run:
    ```bash
    ./run.sh
